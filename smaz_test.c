@@ -4,6 +4,10 @@
 
 #include "smaz.h"
 
+#ifdef _WIN32
+#define random rand
+#endif
+
 int main(void) {
     char in[512];
     char out[4096];
